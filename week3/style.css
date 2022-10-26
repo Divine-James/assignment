@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(218, 28%, 13%);
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+body a,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+body ul {
+  list-style: none;
+}
+body a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding-top: 1rem;
+}
+nav .links ul {
+  display: flex;
+}
+nav .links ul li {
+  margin-left: 2rem;
+}
+nav .links ul li a:hover {
+  text-decoration: underline;
+}
+
+.About-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem;
+}
+.About-section .detail-about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8rem;
+}
+.About-section .detail .about {
+  font-size: 1.1rem;
+  width: 80%;
+  hyphens: auto;
+}
+.About-section .detail h2 {
+  margin-bottom: 4rem;
+  font-size: 1.7rem;
+}
+
+.About-section .detail a:hover {
+  color: hsl(0, 0%, 100%);
+}
+.illustration {
+  width: 100%;
+  position: relative;
+}
+.illustration .name {
+  position: absolute;
+  top: 5rem;
+  left: 25rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 1000;
+  font-weight: 100;
+  font-size: 2rem;
+  color: rgb(126, 80, 253);
+}
+span {
+  display: block;
+  border-bottom: 1px solid aqua;
+  margin-left: 2.5rem;
+}
+.name:hover {
+  color: rgb(90, 90, 236);
+}
+
+.get-to-know-me {
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.get-to-know-me .hobbies {
+  justify-content: flex-start;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+.get-to-know-me .priorities {
+  margin-left: 20rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgb(65, 145, 231),
+    rgb(45, 215, 34)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  margin: 3rem 2rem;
+  display: inline-block;
+}
+.heading:hover {
+  transform: skewY(1deg) skewX(7deg) scale(1.07);
+  text-shadow: 0.5rem 1rem 2rem rgba(black, 0.2);
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+.head {
+  margin-left: 30rem;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 20rem;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 15px;
+  margin: 50px 10px;
+  border-radius: 10px;
+}
+.project:hover {
+  transform: translateY(-10px);
+  background-color: hsl(217, 56%, 48%);
+}
+.project-heading {
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.project-paragraph {
+  padding: 10px;
+  text-align: center;
+  height: 7rem;
+}
+.project-link {
+  font-size: 15px;
+  border: 1px solid grey;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.project-link:hover {
+  transform: translateY(-10px);
+}
+.get-to-know-me li {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: hsl(217, 56%, 48%);
+  text-align: center;
+  padding-top: 4rem;
+  display: inline-block;
+}
+.get-to-know-me li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.get-to-know-me li:hover {
+  transform: translateY(-2rem);
+}
+.skill {
+  padding-bottom: 5rem;
+}
+
+.skill-list li {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: hsl(217, 56%, 48%);
+  text-align: center;
+  padding-top: 4rem;
+  display: inline-block;
+}
+.skill-list li:not(:last-child) {
+  margin-right: 3rem;
+}
+.skill-list li:first-child {
+  margin-left: 3rem;
+}
+.skill-list li:hover {
+  transform: translateY(-2rem);
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  margin-top: 7rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.4rem;
+
+  border: 1px solid rgb(65, 145, 231);
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: hsl(216, 79%, 4%);
+}
+
+.footer {
+  background: hsl(216, 53%, 9%);
+  color: #fff;
+  padding-bottom: 3rem;
+}
+.contact {
+  padding-top: 2rem;
+  margin-left: 3rem;
+}
+.contact a {
+  padding-bottom: 2rem;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.social a {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.social a:hover {
+  border-color: hsl(176, 68%, 64%);
+  color: aqua;
+}
